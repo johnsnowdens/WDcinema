@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="20dp"
+    android:background="#332973"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:id="@+id/Wdlog"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:src="@drawable/splashim"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_horizontal"
+
+        />
+
+    <ImageView
+       android:src="@drawable/wordcinematext"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="120dp"/>
+
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bgopasity"
+        android:hint="Name"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"/>
+    <EditText
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="100dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:background="#EF3A01"
+        android:text="войти"
+        android:textSize="14sp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:background="@drawable/bgopasity"
+        android:text="Зарегистрироваться"
+        android:textSize="14sp"
+        android:layout_height="wrap_content"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:orientation="vertical"
+    android:padding="10dp">
+    <ImageView
+        android:id="@+id/arrup"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_baseline_arrow_upward_24"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/arrup"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="95dp"
+        android:layout_toStartOf="@+id/textFourTV"
+        android:src="@drawable/ic_baseline_arrow_down" />
+
+    <TextView
+        android:id="@+id/textOneTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="TEXTONE"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/textTwoTV"
+        android:text="TEXT TWO"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/textThreeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="90dp"
+        android:text="TEXT THREE"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="italic" />
+    <TextView
+        android:id="@+id/textFourTV"
+        android:text="TEXT FOUR"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        />
+
+
+</RelativeLayout>
