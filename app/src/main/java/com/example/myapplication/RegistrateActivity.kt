@@ -52,23 +52,31 @@ class RegistrateActivity : AppCompatActivity() {
                 .put ("lastName",lastName)
                 .put ("email",email)
                 .put ("password",password)
+
             val request = JsonObjectRequest(
                 Request.Method.POST,
                 url.REGISTER_URL,
                 requestJson,
 
-                {response ->
+                { response ->
                     Toast.makeText(this, "token -${response["token"]}", Toast.LENGTH_SHORT).show()
                 },
-                {error ->
+                { error ->
                     Toast.makeText(this, error.message, Toast.LENGTH_SHORT).show()
                     error.printStackTrace()
                 }
-
             )
-            requestQueue.add(request)
 
+            requestQueue.add(request)
         }
+
+        binding.backTologin.setOnClickListener{
+            val i = Intent(this,MainActivity::class.java)
+            startActivity(i)
+
+            finish()
+        }
+
 
 
     }

@@ -62,12 +62,14 @@
         android:text="войти"
         android:textColor="@color/white"
         android:textStyle="bold"
+        android:textAllCaps="false"
         android:textSize="14sp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"/>
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/registr_btn"
         android:padding="10dp"
+        android:textAllCaps="false"
         android:layout_width="match_parent"
         android:background="@drawable/bgopasity"
         android:text="Зарегистрироваться"

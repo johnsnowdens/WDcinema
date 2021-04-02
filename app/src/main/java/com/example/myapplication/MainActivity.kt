@@ -45,8 +45,8 @@ class MainActivity : AppCompatActivity() {
                 url.LOGIN_URL,
 
                 JSONObject()
-                    .put(login, password)
-                    .put(password, password),
+                    .put("email", login)
+                    .put("password", password),
 
                 Response.Listener<JSONObject> { response ->
                     Toast.makeText(this, "token = ${response["token"]}", Toast.LENGTH_SHORT).show()
@@ -54,6 +54,7 @@ class MainActivity : AppCompatActivity() {
 
                 Response.ErrorListener {
                     Toast.makeText(this, "Ошибка. Иди нахер", Toast.LENGTH_SHORT).show()
+                    it.printStackTrace()
                 }
             )
 
